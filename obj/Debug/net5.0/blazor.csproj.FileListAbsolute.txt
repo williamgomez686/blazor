@@ -630,3 +630,5 @@
 /home/infwilliam/pruebas/blazor/obj/Debug/net5.0/blazor.dll
 /home/infwilliam/pruebas/blazor/obj/Debug/net5.0/ref/blazor.dll
 /home/infwilliam/pruebas/blazor/obj/Debug/net5.0/blazor.pdb
+/home/infwilliam/pruebas/blazor/obj/Debug/net5.0/RazorDeclaration/Pages/Prueba.razor.g.cs
+/home/infwilliam/pruebas/blazor/obj/Debug/net5.0/Razor/Pages/Prueba.razor.g.cs

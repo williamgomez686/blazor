@@ -1,0 +1,50 @@
+﻿@using System.Net.Http
+@using System.Net.Http.Json
+@using System.Threading.Tasks
+@using Models
+@inject HttpClient Http
+@page "/prueba"
+
+<h1>Probando comunicacion entre una api y Blazor!</h1>
+
+esta es una prueba de un componete de blazor
+
+@if (todoItems == null)
+{
+    <p>No se encontraron registros.</p>
+}
+else
+{
+
+    <table class="table table-bordered table-hober">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th>Is Complete</th>
+    </tr>
+  </thead>
+  <tbody> 
+        @foreach(var item in todoItems)
+        {
+            <tr>
+            <th>@item.Id</th>
+            <th>@item.Name</th>
+            <th>@item.IsComplete</th>
+            </tr>
+        }
+  </tbody>
+</table>
+
+}
+
+@code {
+    private TodoItem[] todoItems;
+    TodoItem res = new TodoItem();
+
+    protected override async Task OnInitializedAsync() => 
+        todoItems = await Http.GetFromJsonAsync<TodoItem[]>("https://localhost:7001/api/Api");
+        //res = await Http.GetFromJsonAsync<TodoItem>("https://localhost:7001/api/Api");
+}
+
+

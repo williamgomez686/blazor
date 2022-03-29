@@ -10,7 +10,22 @@ namespace blazor.Pages
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
+#nullable restore
+#line 1 "/home/infwilliam/pruebas/blazor/_Imports.razor"
+using System.Net.Http;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "/home/infwilliam/pruebas/blazor/_Imports.razor"
+using System.Net.Http.Json;
+
+#line default
+#line hidden
+#nullable disable
 #nullable restore
 #line 3 "/home/infwilliam/pruebas/blazor/_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
@@ -67,57 +82,14 @@ using blazor.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "/home/infwilliam/pruebas/blazor/Pages/Index.razor"
-using System.Net.Http;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 3 "/home/infwilliam/pruebas/blazor/Pages/Index.razor"
-using System.Net.Http.Json;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 4 "/home/infwilliam/pruebas/blazor/Pages/Index.razor"
-using System.Threading.Tasks;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 6 "/home/infwilliam/pruebas/blazor/Pages/Index.razor"
-using Models;
-
-#line default
-#line hidden
-#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class Index_copy : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 17 "/home/infwilliam/pruebas/blazor/Pages/Index.razor"
-       
-    private string newItemName;
-
-    private async Task AddItem()
-    {
-        var addItem = new TodoItem { Name = newItemName, IsComplete = false };
-        await Http.PostAsJsonAsync("https://localhost:7001/api/Api", addItem);
-    }
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

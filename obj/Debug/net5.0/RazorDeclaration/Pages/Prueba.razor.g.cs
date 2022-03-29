@@ -68,35 +68,35 @@ using blazor.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/home/infwilliam/pruebas/blazor/Pages/Index.razor"
+#line 1 "/home/infwilliam/pruebas/blazor/Pages/Prueba.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/home/infwilliam/pruebas/blazor/Pages/Index.razor"
+#line 2 "/home/infwilliam/pruebas/blazor/Pages/Prueba.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/home/infwilliam/pruebas/blazor/Pages/Index.razor"
+#line 3 "/home/infwilliam/pruebas/blazor/Pages/Prueba.razor"
 using System.Threading.Tasks;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "/home/infwilliam/pruebas/blazor/Pages/Index.razor"
+#line 4 "/home/infwilliam/pruebas/blazor/Pages/Prueba.razor"
 using Models;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/prueba")]
+    public partial class Prueba : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -104,15 +104,14 @@ using Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 17 "/home/infwilliam/pruebas/blazor/Pages/Index.razor"
+#line 41 "/home/infwilliam/pruebas/blazor/Pages/Prueba.razor"
        
-    private string newItemName;
+    private TodoItem[] todoItems;
+    TodoItem res = new TodoItem();
 
-    private async Task AddItem()
-    {
-        var addItem = new TodoItem { Name = newItemName, IsComplete = false };
-        await Http.PostAsJsonAsync("https://localhost:7001/api/Api", addItem);
-    }
+    protected override async Task OnInitializedAsync() => 
+        todoItems = await Http.GetFromJsonAsync<TodoItem[]>("https://localhost:7001/api/Api");
+        //res = await Http.GetFromJsonAsync<TodoItem>("https://localhost:7001/api/Api");
 
 #line default
 #line hidden

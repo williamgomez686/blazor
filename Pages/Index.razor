@@ -1,7 +1,28 @@
-﻿@page "/"
+﻿
+@using System.Net.Http
+@using System.Net.Http.Json
+@using System.Threading.Tasks
+@inject HttpClient Http
+@using Models
+@page "/"
 
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+
+<input @bind="newItemName" placeholder="New Todo Item" />
+<button @onclick="AddItem">Add</button>
+
+@code {
+    private string newItemName;
+
+    private async Task AddItem()
+    {
+        var addItem = new TodoItem { Name = newItemName, IsComplete = false };
+        await Http.PostAsJsonAsync("https://localhost:7001/api/Api", addItem);
+    }
+}
+
+
+
