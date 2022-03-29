@@ -8,35 +8,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -446051894,
+        "HashCode": -2092796581,
         "Kind": "Components.Component",
-        "Name": "blazor.App",
+        "Name": "blazor.Pages.Index",
         "AssemblyName": "blazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazor.App"
+          "Common.TypeName": "blazor.Pages.Index"
         }
       },
       {
-        "HashCode": -587147745,
+        "HashCode": -994072120,
         "Kind": "Components.Component",
-        "Name": "blazor.App",
+        "Name": "blazor.Pages.Index",
         "AssemblyName": "blazor",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "blazor.App"
+            "TagName": "blazor.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazor.App",
+          "Common.TypeName": "blazor.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -107,72 +107,6 @@
         }
       },
       {
-        "HashCode": -2092796581,
-        "Kind": "Components.Component",
-        "Name": "blazor.Pages.Index",
-        "AssemblyName": "blazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazor.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -994072120,
-        "Kind": "Components.Component",
-        "Name": "blazor.Pages.Index",
-        "AssemblyName": "blazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazor.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazor.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1545286030,
-        "Kind": "Components.Component",
-        "Name": "blazor.Pages.post",
-        "AssemblyName": "blazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "post"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazor.Pages.post"
-        }
-      },
-      {
-        "HashCode": 1143240405,
-        "Kind": "Components.Component",
-        "Name": "blazor.Pages.post",
-        "AssemblyName": "blazor",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazor.Pages.post"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazor.Pages.post",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1085021629,
         "Kind": "Components.Component",
         "Name": "blazor.Pages.Prueba",
@@ -202,6 +136,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "blazor.Pages.Prueba",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -446051894,
+        "Kind": "Components.Component",
+        "Name": "blazor.App",
+        "AssemblyName": "blazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazor.App"
+        }
+      },
+      {
+        "HashCode": -587147745,
+        "Kind": "Components.Component",
+        "Name": "blazor.App",
+        "AssemblyName": "blazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazor.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazor.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13074,11 +13041,6 @@
   },
   "RootNamespace": "blazor",
   "Documents": [
-    {
-      "FilePath": "/home/infwilliam/pruebas/blazor/Pages/post.razor",
-      "TargetPath": "Pages\\post.razor",
-      "FileKind": "component"
-    },
     {
       "FilePath": "/home/infwilliam/pruebas/blazor/App.razor",
       "TargetPath": "App.razor",
